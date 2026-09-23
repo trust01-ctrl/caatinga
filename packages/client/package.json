@@ -1,7 +1,7 @@
 {
   "name": "@caatinga/client",
   "version": "3.10.0",
-  "description": "Browser and Node client for Soroban smart contracts — connects generated bindings, Caatinga artifacts, and wallet adapters",
+  "description": "Browser and Node client for Soroban smart contracts \u2014 connects generated bindings, Caatinga artifacts, and wallet adapters",
   "keywords": [
     "stellar",
     "soroban",
@@ -61,7 +61,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "tsup src/index.ts src/freighter.ts src/stellar-wallets-kit.ts src/react.ts src/vite.ts --format esm,cjs --dts",
+    "build": "node init && tsup src/index.ts src/freighter.ts src/stellar-wallets-kit.ts src/react.ts src/vite.ts --format esm,cjs --dts",
     "test": "vitest run --pool=threads",
     "typecheck": "tsc --noEmit"
   },
