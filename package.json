@@ -8,8 +8,8 @@
   "type": "module",
   "packageManager": "pnpm@9.15.4",
   "scripts": {
-    "build": "turbo build",
-    "dev": "pnpm --filter @caatinga/cli dev",
+    "build": "node init && turbo build",
+    "dev": "node init && pnpm --filter @caatinga/cli dev",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
